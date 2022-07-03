@@ -47,7 +47,11 @@ class OptionsMenu extends MusicBeatState
 			new ReplayOption("View replays"),
 			#end
 			new WatermarkOption("Turn off all watermarks from the engine.")
-			
+		])
+		
+		new OptionCategory("Mobile settings", [
+			new CustomControls("edit a control"),
+			new About("about android port")
 		])
 		
 	];
@@ -87,7 +91,11 @@ class OptionsMenu extends MusicBeatState
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
-
+    
+    #if mobileC
+    addVirtualPad(UP_DOWN, A_B);
+    #end
+    
 		super.create();
 	}
 
