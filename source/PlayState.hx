@@ -103,9 +103,9 @@ class PlayState extends MusicBeatState
 	var detailsPausedText:String = "";
 	#end
 
-  #if mobileC
-  var mcontrols:Mobilecontrols;
-  #end
+         #if mobileC
+         var mcontrols:Mobilecontrols;
+         #end
   
 	private var vocals:FlxSound;
 
@@ -1104,7 +1104,7 @@ class PlayState extends MusicBeatState
 		if (loadRep)
 			replayTxt.cameras = [camHUD];
 
-    #if mobileC
+                #if mobileC
 			mcontrols = new Mobilecontrols();
 			switch (mcontrols.mode)
 			{
