@@ -365,13 +365,6 @@ class Controls extends FlxActionSet
 		}
 	}	
 	#end
-	
-	
-        #if android
-	public function addAndroidBack() {
-		/* fix this later
-	}
-	#end*/
 
 	override function update()
 	{
