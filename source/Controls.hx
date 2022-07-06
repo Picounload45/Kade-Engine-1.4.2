@@ -367,8 +367,7 @@ class Controls extends FlxActionSet
 	#end
 	
 	
-	
-		#if android
+        #if android
 	public function addAndroidBack() {
 		/* fix this later
 		var BACK = #if (openfl >= "8.0.0") 0x4000010E #else 27 #end;
@@ -377,8 +376,7 @@ class Controls extends FlxActionSet
 		_back.addKey(BACK, PRESSED);
 	}
 	#end*/
-	
-	
+
 	override function update()
 	{
 		super.update();
