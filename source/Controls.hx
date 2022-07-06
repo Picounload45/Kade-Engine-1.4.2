@@ -11,7 +11,6 @@ import flixel.input.gamepad.FlxGamepadButton;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.keyboard.FlxKey;
 #if mobileC
-import flixel.FlxGroup;
 import ui.Hitbox;
 import ui.Mobilecontrols;
 import flixel.ui.FlxButton;
