@@ -57,6 +57,7 @@ import openfl.filters.ShaderFilter;
 #if mobileC
 import ui.Mobilecontrols;
 #end
+import Config;
 
 #if windows
 import Discord.DiscordClient;
@@ -103,9 +104,9 @@ class PlayState extends MusicBeatState
 	var detailsPausedText:String = "";
 	#end
 
-         #if mobileC
-         var mcontrols:Mobilecontrols;
-         #end
+  #if mobileC
+  var mcontrols:Mobilecontrols;
+  #end
   
 	private var vocals:FlxSound;
 
@@ -1104,7 +1105,7 @@ class PlayState extends MusicBeatState
 		if (loadRep)
 			replayTxt.cameras = [camHUD];
 
-                #if mobileC
+    #if mobileC
 			mcontrols = new Mobilecontrols();
 			switch (mcontrols.mode)
 			{
@@ -2739,7 +2740,6 @@ class PlayState extends MusicBeatState
 
 					if (SONG.validScore)
 					{
-						NGio.unlockMedal(60961);
 						Highscore.saveWeekScore(storyWeek, campaignScore, storyDifficulty);
 					}
 
