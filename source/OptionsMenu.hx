@@ -47,12 +47,12 @@ class OptionsMenu extends MusicBeatState
 			new ReplayOption("View replays"),
 			#end
 			new WatermarkOption("Turn off all watermarks from the engine.")
-		])
+		]),
 		
 		new OptionCategory("Mobile settings", [
 			new CustomControls("edit a control"),
 			new About("about android port")
-		])
+		]),
 		
 	];
 
