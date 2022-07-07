@@ -676,24 +676,6 @@ class Controls extends FlxActionSet
 		#end*/
 	}
 
-  public function loadKeyBinds()
-	{
-
-		//trace(FlxKey.fromString(FlxG.save.data.upBind));
-
-		removeKeyboard();
-		KeyBinds.keyCheck();
-	
-		inline bindKeys(Control.UP, [FlxKey.fromString(FlxG.save.data.upBind), FlxKey.UP]);
-		inline bindKeys(Control.DOWN, [FlxKey.fromString(FlxG.save.data.downBind), FlxKey.DOWN]);
-		inline bindKeys(Control.LEFT, [FlxKey.fromString(FlxG.save.data.leftBind), FlxKey.LEFT]);
-		inline bindKeys(Control.RIGHT, [FlxKey.fromString(FlxG.save.data.rightBind), FlxKey.RIGHT]);
-		inline bindKeys(Control.ACCEPT, [Z, SPACE, ENTER]);
-		inline bindKeys(Control.BACK, [BACKSPACE, ESCAPE]);
-		inline bindKeys(Control.PAUSE, [P, ENTER, ESCAPE]);
-		inline bindKeys(Control.RESET, [FlxKey.fromString(FlxG.save.data.killBind)]);
-	}
-	
 	function removeKeyboard()
 	{
 		for (action in this.digitalActions)
