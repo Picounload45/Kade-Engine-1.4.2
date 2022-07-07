@@ -321,29 +321,17 @@ class Controls extends FlxActionSet
 		{
 			case A:
 				inline forEachBound(Control.ACCEPT, (action, state) -> addbutton(action, virtualPad.buttonA, state));
-                        case B:
-				inline forEachBound(Control.BACK, (action, state) -> addbutton(action, virtualPad.buttonB, state));
-			case D:
-                                //nothing				
+                        case B:case A:
+				inline forEachBound(Control.ACCEPT, (action, state) -> addbutton(action, virtualPad.buttonA, state));
 			case A_B:
 				inline forEachBound(Control.ACCEPT, (action, state) -> addbutton(action, virtualPad.buttonA, state));
 				inline forEachBound(Control.BACK, (action, state) -> addbutton(action, virtualPad.buttonB, state));
 			case A_B_C:
 				inline forEachBound(Control.ACCEPT, (action, state) -> addbutton(action, virtualPad.buttonA, state));
-				inline forEachBound(Control.BACK, (action, state) -> addbutton(action, virtualPad.buttonB, state));					
-			case A_B_E:
-				inline forEachBound(Control.ACCEPT, (action, state) -> addbutton(action, virtualPad.buttonA, state));
-				inline forEachBound(Control.BACK, (action, state) -> addbutton(action, virtualPad.buttonB, state));	
+				inline forEachBound(Control.BACK, (action, state) -> addbutton(action, virtualPad.buttonB, state));
 			case A_B_X_Y:
 				inline forEachBound(Control.ACCEPT, (action, state) -> addbutton(action, virtualPad.buttonA, state));
-				inline forEachBound(Control.BACK, (action, state) -> addbutton(action, virtualPad.buttonB, state));		
-			case A_B_C_X_Y:
-				inline forEachBound(Control.ACCEPT, (action, state) -> addbutton(action, virtualPad.buttonA, state));
-				inline forEachBound(Control.BACK, (action, state) -> addbutton(action, virtualPad.buttonB, state));	
-                        case A_B_C_X_Y_Z:
-                                //nothing
-                        case FULL:
-                                //nothing
+				inline forEachBound(Control.BACK, (action, state) -> addbutton(action, virtualPad.buttonB, state));
 			case NONE:
 		}
 	}	
