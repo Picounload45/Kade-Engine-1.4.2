@@ -49,7 +49,7 @@ class OptionsMenu extends MusicBeatState
 			new WatermarkOption("Turn off all watermarks from the engine.")
 		]),
 		
-		new OptionCategory("Mobile settings", [
+		new OptionCatagory("Mobile settings", [
 			new CustomControls("edit a control"),
 			new About("about android port")
 		]),
