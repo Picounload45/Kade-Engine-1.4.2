@@ -49,10 +49,10 @@ class TitleState extends MusicBeatState
 
 	override public function create():Void
 	{
-		@:privateAccess
+		/*@:privateAccess
 		{
 			trace("Loaded " + openfl.Assets.getLibrary("default").assetsLoaded + " assets (DEFAULT)");
-		}
+		}*/
 		
 		PlayerSettings.init();
 
