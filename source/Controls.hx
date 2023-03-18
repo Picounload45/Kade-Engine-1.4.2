@@ -10,6 +10,7 @@ import flixel.input.actions.FlxActionSet;
 import flixel.input.gamepad.FlxGamepadButton;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.keyboard.FlxKey;
+import flixel.group.FlxGroup;
 import ui.Hitbox;
 import ui.Mobilecontrols;
 import ui.FlxVirtualPad;
@@ -344,16 +345,16 @@ class Controls extends FlxActionSet
 
 
 
-        /*#if android
+        #if android
 	public function addAndroidBack() {
-		// fix this later
+		/* fix this later
 
 		var BACK = #if (openfl >= "8.0.0") 0x4000010E #else 27 #end;
 		_back.addKey(BACK, JUST_RELEASED);
 		_back.addKey(BACK, JUST_PRESSED);
-		_back.addKey(BACK, PRESSED);
+		_back.addKey(BACK, PRESSED);*/
 	}
-	#end*/
+	#end
 
 
 	override function update()
